@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sample</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <style>
+        .container-fluid{
+            height: 100vh;
+            background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.514),rgb(0, 0, 0)),url(doctor-5710152.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #invinsible-container > div{
+            background-color: transparent;
+            box-shadow: 0px 0px 3px rgb(99, 98, 98);
+            padding: 50px 20px;
+        }
+        #invinsible-container > div > p{
+            font-size: 35px;
+            font-weight: 500;
+        }
+        #invinsible-container > div > form > .input-group{
+            margin: 0px 0px 20px 0px;
+        }
+        #invinsible-container > div > form > .input-group > span{
+            background-color: white;
+            color: black;
+        }
+        #invinsible-container > div > form > .input-group > input:focus{
+            border: none;
+
+        }
+        #invinsible-container > div > a{
+            text-decoration: none;
+            font-size: 15px;
+            margin: 10px 0px 0px 0px;
+            color: white;
+        }
+        #invinsible-container > div > a:hover{
+            text-shadow: 0px 0px 4px red;
+        }
+        #invinsible-container > div > a:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center h-100 align-items-center" id="invinsible-container">
+            <div class="col-xl-4 col-sm-5 col-md-6">
+                <p class="text-center text-light">LOGIN</p>
+                <form action="">
+                    <div class="input-group">
+                        <span class="input-group-text mdi mdi-speedometer">@</span>
+                        <input type="email" name="" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">lock</span>
+                        <input type="password" name="" class="form-control" placeholder="Password" required>
+                    </div>
+                    <input type="submit" class="btn btn-primary w-100" value="LOGIN">
+                </form>
+                <a class="float-start" href="">FORGOT PASSWORD?</a>
+                <a class="float-end" href="">NEW USER? REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
